@@ -13,9 +13,18 @@ def order(values: list = None) -> list:
 def anagrams(words: list = None) -> bool:
     if words is None:
         # TODO: demander les mots ici
-        pass
+        list=[]
+        list2=[]
+        premier_mot= list.append(input("écrivez votre premier mot: "))
+        deuxieme_mot= list2.append(input("ecrivez votre deuxième mot de même longueur: "))
+        list2.sort(reverse=True)
+        print (list,list2)
+        if list== list2:
+            print(True)
+        else:
+             print(False)
 
-    return False
+
 
 
 def contains_doubles(items: list) -> bool:
